@@ -1,78 +1,516 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
-					<h2>3周3页面Workshop</h2>
-				  </section>
-			  
-				  <section>
-					<h3 style="border:none;">课程安排</h3>
-					<div class="each-day">
-					  <p>第一周</p>
-					  <ul>
-						<li><a target="_blank" href="index.html#/2">HTML基础</a></li>
-						<li><a target="_blank" href="index.html#/8">CSS基础</a></li>
-					  </ul>
-					</div>
-					<div class="each-day">
-					  <p>第二周</p>
-					  <ul>
-						<li><a target="_blank" href="workflow-and-tools.html">高效前端开发</a></li>
-						<li>
-						  <a target="_blank" href="css3.html">CSS3</a>
-						</li>
-					  </ul>
-					</div>
-					<div class="each-day">
-					  <p>第三周</p>
-					  <ul>
-						<li><a target="_blank" href="http://pan.baidu.com/s/1gdlc6zT">设计基础</a></li>
-						<li><a target="_blank" href="rwd-bestpractise.html">响应式设计及最佳实践</a></li>
-					  </ul>
-					</div>
-				  </section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="css/main.css"/>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+            <h2>3周3页面Workshop</h2>
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section>
+            <h3 style="border:none;">课程安排</h3>
+            <div class="each-day">
+                <p>第一周</p>
+                <ul>
+                    <li><a target="_blank" href="index.html#/2">HTML基础</a></li>
+                    <li><a target="_blank" href="index.html#/8">CSS基础</a></li>
+                </ul>
+            </div>
+            <div class="each-day">
+                <p>第二周</p>
+                <ul>
+                    <li><a target="_blank" href="workflow-and-tools.html">CSS布局</a></li>
+                    <li>
+                        <a target="_blank" href="css3.html">响应式设计及最佳实践</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="each-day">
+                <p>第三周</p>
+                <ul>
+                    <li><a target="_blank" href="http://pan.baidu.com/s/1gdlc6zT">CSS进阶</a></li>
+                    <li><a target="_blank" href="rwd-bestpractise.html">高效前端开发实践</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- HTML 基础 -->
+
+        <section>
+            <h3>HTML 基础</h3>
+            <ul>
+                <li>Front-end technology</li>
+                <li>What's html</li>
+                <li>Html tags</li>
+                <li>DOM structure</li>
+            </ul>
+        </section>
+
+        <section>
+            <section>
+                <h3>Front-end technology</h3>
+            </section>
+            <section>
+                <h3>HTML5 & CSS3</h3>
+                <ul class="three-technical">
+                    <li>
+                        <span class="title">HTML</span> ->
+                        <span class="font-pink">Content</span>
+                        + Style + Interaction
+                    </li>
+                    <li>
+                        <span class="title">CSS</span> ->
+                        <span class="font-pink">Style</span>
+                        + Content + Interaction
+                    </li>
+                    <li>
+                        <span class="title">Javascript</span> ->
+                        <span class="font-pink">Interaction</span>
+                        + Content + Style
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div data-markdown>
+                    <script type="text/template">
+                        ### Html5 controls styling
+                        ```HTML
+                        <progress value="22" max="100"></progress>
+                        ```
+                    </script>
+                </div>
+                <div class="bg-container">
+                    <progress value="22" max="100"></progress>
+                </div>
+            </section>
+
+            <section>
+                <div data-markdown>
+                    <script type="text/template">
+                        ### CSS3 controls interaction
+                        ```HTML
+                        <style>
+                            .my-div {
+                                width: 100px;
+                                height: 100px;
+                                background: #f04e98;
+                                transition: width 2s;
+                            }
+
+                            .my-div:hover {
+                                width: 300px;
+                            }
+                        </style>
+                        <div class="my-div"></div>
+                        ```
+                    </script>
+                </div>
+                <div class="my-div"></div>
+            </section>
+        </section>
+
+        <!-- What's html -->
+
+        <section>
+            <section>
+                <h3>HTML</h3>
+                <p class=" fragment roll-in">
+                    <span class="font-pink">HTML</span> stands for <span class="font-pink">H</span>yper<span
+                        class="font-pink">T</span>ext <span class="font-pink">M</span>arkup <span
+                        class="font-pink">L</span>anguage
+                </p>
+            </section>
+            <section>
+                <h3>What does HTML mean?</h3>
+                <div class="what-is-html fragment roll-in">
+                    <strong>Hypertext</strong>
+                    <p>Overcoming the constraints of written text. Interactive.</p>
+                    <strong>Markup Language</strong>
+                    <p>A modern system for annotating a document in a way that is syntactically distinguishable from the
+                        text. </p>
+                </div>
+            </section>
+            <section>
+                <h3>How to write HTML?</h3>
+                <img src="images/tag.png" alt="tag">
+                <div class="fragment roll-in">
+          <pre>
+            <code>
+              <input type="text">
+            </code>
+          </pre>
+                </div>
+            </section>
+
+            <section>
+                <h3>A whole html structure</h3>
+                <div data-markdown class="text-code">
+                    <script type="text/template">
+                        ```HTML
+                        <!doctype html>
+                        <html>
+                        <head>
+                        </head>
+
+                        <body>
+                        </body>
+                        </html>
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <div data-markdown class="text-code">
+                    <script type="text/template">
+                        ### Head
+                        ```HTML
+                        <head>
+                            <meta charset="utf-8">
+                            <title>Hello World</title>
+                            <meta name="description" content="Description for displaying on search engineer">
+                            <link rel="stylesheet" href="css/my.css"/>
+                        </head>
+                        ```
+                    </script>
+
+                </div>
+                <p>More tags: style, script</p>
+            </section>
+
+            <section>
+                <h3>Style tag</h3>
+                <pre class="text-code">
+          <code>
+            <style>
+              body {
+                  background-color: yellow;
+                  font-size: 16px;
+                  color: red;
+              }
+            </style>
+          </code>
+        </pre>
+            </section>
+
+            <section>
+                <h3>Script tag</h3>
+                <div data-markdown class="text-code">
+                    <script type="text/template">
+                        ```HTML
+                        <head>
+                            <script type="text/javascript" src="test.js"/>
+                        </head>
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <div data-markdown>
+                    <script type="text/template">
+                        ### BODY
+                        ```HTML
+                        <body>
+                        <h1>This is a h1 element</h1>
+                        <p>A long paragraph, A long paragraph, A long paragraph</p>
+                        <ul>
+                            <li>Apple</li>
+                            <li>Pear</li>
+                            <li>Banana</li>
+                        </ul>
+                        <a href="www.google.com">click here to google</a>
+                        <form>
+                            <h1>Please Login</h1>
+                            <input type="text" placeholder="Email Address"/>
+                            <input type="password" placeholder="Password"/>
+                            <input type="submit" value="Login">
+                        </form>
+                        </body>
+                        ```
+                    </script>
+                </div>
+                <a href="example/hello.html" target="_blank">Example</a>
+            </section>
+
+        </section>
+
+        <!-- Common html tag -->
+
+        <section>
+
+            <section>
+                <h3>Common html tag</h3>
+                <ul>
+                    <li>Block tags</li>
+                    <li>Inline tags</li>
+                    <li>Inline Block tags</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Block tags</h3>
+
+                <div>h1, h2, h3, h4, h5, h6</div>
+                <div>form, table, div, ol, ul, li, dl, dt, dd, p</div>
+                <div>header, footer, section, article, nav, aside</div>
+                <!--<a href="https://blackrockdigital.github.io/startbootstrap-creative/" target="_blank">Example</a>-->
+            </section>
+
+            <section>
+                <p>H1 can only be used once, but h2~h6 can be used multiple times.</p>
+            </section>
+
+            <section>
+                <h3>table</h3>
+                <div>table, tr, th, td</div>
+                <div data-markdown style="width: 400px; float:  left;">
+                    <script type="text/template">
+                        ```HTML
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Alex</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td>Mike</td>
+                                <td>25</td>
+                            </tr>
+                        </table>
+                        ```
+                    </script>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Mike</td>
+                            <td>25</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h3>form</h3>
+                <div>form, label, input</div>
+                <form>
+                    <label for="name">name</label>
+                    <input id="name" placeholder="name">
+                    <label for="password">password</label>
+                    <input id="password" placeholder="password">
+                    <input type="submit">
+                </form>
+            </section>
+
+            <section>
+                <h3>List-ul</h3>
+                <div>ul, ol, li</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <ul>
+                            <li>Apple</li>
+                            <li>Pear</li>
+                            <li>Banana</li>
+                        </ul>
+                        ```
+                    </script>
+                </div>
+                <ul>
+                    <li>Apple</li>
+                    <li>Pear</li>
+                    <li>Banana</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>List-ol</h3>
+                <div>ul, ol, li</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <ol>
+                            <li>Open the fridge</li>
+                            <li>Put an elephant into the fridge</li>
+                            <li>Close the fridge</li>
+                        </ol>
+                        ```
+                    </script>
+                </div>
+                <ol>
+                    <li>Open the fridge</li>
+                    <li>Put an elephant into the fridge</li>
+                    <li>Close the fridge</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Inline tags</h3>
+                <p>span, strong, em, a, label</p>
+                <!--<div>svg, canvas, audio, video</div>-->
+            </section>
+
+            <section>
+                <h3>span</h3>
+                <p>Can be nested anywhere.</p>
+            </section>
+
+            <section>
+                <div>a</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <a href="http://www.w3school.com.cn/">W3School</a>
+                        <a href="http://www.w3school.com.cn/" target="_self">W3School</a>
+                        <a href="http://www.w3school.com.cn/" target="_blank">W3School</a>
+                        ```
+                    </script>
+                </div>
+                <a href="http://www.w3school.com.cn/">W3School</a>
+                <a href="http://www.w3school.com.cn/" target="_self">W3School</a>
+                <a href="http://www.w3school.com.cn/" target="_blank">W3School</a>
+            </section>
+
+            <section>
+                <h3>Inline Block Tags</h3>
+                <p> img, input, select</p>
+            </section>
+
+            <section>
+                <div>img</div>
+
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <img src="images/box-model.png" alt="box model" title="box model image">
+                        ```
+                    </script>
+                </div>
+                <img src="images/box-model.png" alt="box model" title="box model image">
+            </section>
+
+            <section>
+                <div>input</div>
+                <p>[text, checkbox, radio, password, button]</p>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <input type="text" value="I am text">
+                        <input type="password" value="I am password">
+                        <input type="radio" value="I am radio">
+                        <input type="checkbox" value="I am checkbox">
+                        <input type="button" value="I am button">
+                        ```
+                    </script>
+                </div>
+                <div>
+                    <input type="text" value="I am text">
+                    <input type="password" value="I am password">
+                    <input type="radio" value="I am radio">
+                    <input type="checkbox" value="I am checkbox">
+                    <input type="button" value="I am button">
+                </div>
+            </section>
+
+            <section>
+                <h3>Character</h3>
+                <p>&amp;lt; &amp;gt; &amp;nbsp; &amp;copy;</p>
+                <p>&lt; &gt; &nbsp; &copy;</p>
+
+            </section>
+        </section>
+
+        <!-- Html dom structure -->
+
+        <section>
+            <section>
+                <h3>Html dom structure</h3>
+            </section>
+            <section>
+                <h3>example</h3>
+                <img src="images/dom-structure.gif">
+            </section>
+            <section>
+                <h3>Review tags</h3>
+                <ul>
+                    <li>h1, h2, h3, h4, h5, h6</li>
+                    <li>p, div, section</li>
+                    <!--<li>aside, header, footer, nav, article</li>-->
+                    <li>table, th, tr, td</li>
+                    <li>form, label, input</li>
+                    <li>ul, ol, li</li>
+                    <li>a, img, span</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>Practice</h3>
+                <p>30 minutes</p>
+            </section>
+        </section>
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
