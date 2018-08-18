@@ -75,8 +75,14 @@
             <section>
                 <h3>Front-end technology</h3>
             </section>
+
             <section>
-                <h3>HTML5 & CSS3</h3>
+                <h3>Web page</h3>
+                <p>structure: HTML</p>
+                <p>appearance: CSS</p>
+            </section>
+
+            <section>
                 <ul class="three-technical">
                     <li>
                         <span class="title">HTML</span> ->
@@ -150,16 +156,21 @@
                 <h3>What does HTML mean?</h3>
                 <div class="what-is-html fragment roll-in">
                     <strong>Hypertext</strong>
-                    <p>Overcoming the constraints of written text. Interactive.</p>
+                    <p>The document contains links that allow to jump to other places in the document or to another
+                        document</p>
                     <strong>Markup Language</strong>
-                    <p>A modern system for annotating a document in a way that is syntactically distinguishable from the
-                        text. </p>
+                    <p>A way that computers speak to each other to control how text is processed and presented</p>
                 </div>
             </section>
 
             <section>
-                <h3>HTML inventor</h3>
+                <h3>HTML history</h3>
                 <p>Physicist Tim Berners-Lee</p>
+                <p>1980 - prototype ENQUIRE</p>
+                <p>1989 - propose an Internet-based hypertext system</p>
+                <p>1990 - write the browser and web server</p>
+                <p>1991 - first public description</p>
+                <p>1993 - Internet Engineering Task Force - first proposal for an HTML specification</p>
             </section>
 
             <section>
@@ -168,10 +179,8 @@
             </section>
 
             <section>
-                <p>标记语言是一套标记标签 (markup tag)</p>
-                <div class="what-is-html fragment roll-in">
-                    <p>HTML 使用标记标签来描述网页</p>
-                </div>
+                <h3>tags & attributes</h3>
+                <!--<p>标记语言是一套标记标签 (markup tag) 使用标记标签来描述网页</p>-->
             </section>
 
             <section>
@@ -216,8 +225,17 @@
             </section>
 
             <section>
-                <h3>Tags</h3>
-                <p>The basic structure of an HTML document</p>
+                <h3>Web Browsers</h3>
+                <p>read HTML documents and display them</p>
+            </section>
+
+            <section>
+                <h3>HTML page structure</h3>
+                <img src="images/HTML-page-structure.png">
+            </section>
+
+            <section>
+                <h3>Basic structure of HTML document</h3>
                 <div data-markdown class="text-code">
                     <script type="text/template">
                         ```HTML
@@ -232,14 +250,6 @@
                         ```
                     </script>
                 </div>
-                <div class="what-is-html fragment roll-in">
-                    <p>Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。</p>
-                </div>
-            </section>
-
-            <section>
-                <h3>HTML网页结构</h3>
-                <img src="images/HTML-page-structure.png">
             </section>
 
             <section>
@@ -320,17 +330,76 @@
         <section>
 
             <section>
-                <h3>Common html tag</h3>
-                <ul>
-                    <li>Block tags</li>
-                    <li>Inline tags</li>
-                    <li>Inline Block tags</li>
-                </ul>
+                <h3>HTML tags</h3>
             </section>
 
             <section>
-                <h3>Block tags</h3>
+                <h3>How to Add HTML Headings</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <h1>This is a h1 element</h1>
+                        <h2>This is a h2 element</h2>
+                        <h3>This is a h3 element</h3>
+                        <h4>This is a h4 element</h4>
+                        <h5>This is a h5 element</h5>
+                        <h6>This is a h6 element</h6>
+                        ```
+                    </script>
+                </div>
+            </section>
 
+            <section>
+                <h3>How to Add Text</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```
+                        <P> - Paragraph
+                        <b> – Bold text
+                        <strong> – Important text
+                        <i> – Italic text
+                        <em> – Emphasized text
+                        <mark> – Marked text
+                        <small> – Small text
+                        <del> – Deleted text
+                        <ins> – Inserted text
+                        <sub> – Subscript text
+                        <sup> – Superscript text
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <div>a</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <a href="http://www.w3school.com.cn/">W3School</a>
+                        <a href="http://www.w3school.com.cn/" target="_self">W3School</a>
+                        <a href="http://www.w3school.com.cn/" target="_blank">W3School</a>
+                        ```
+                    </script>
+                </div>
+                <a href="http://www.w3school.com.cn/">W3School</a>
+                <a href="http://www.w3school.com.cn/" target="_self">W3School</a>
+                <a href="http://www.w3school.com.cn/" target="_blank">W3School</a>
+            </section>
+
+            <section>
+                <div>img</div>
+
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <img src="images/box-model.png" alt="box model" title="box model image">
+                        ```
+                    </script>
+                </div>
+                <img src="images/box-model.png" alt="box model" title="box model image">
+            </section>
+
+            <section>
                 <div>h1, h2, h3, h4, h5, h6</div>
                 <div>form, table, div, ol, ul, li, dl, dt, dd, p</div>
                 <div>header, footer, section, article, nav, aside</div>
@@ -433,48 +502,8 @@
             </section>
 
             <section>
-                <h3>Inline tags</h3>
-                <p>span, strong, em, a, label</p>
-                <!--<div>svg, canvas, audio, video</div>-->
-            </section>
-
-            <section>
                 <h3>span</h3>
                 <p>Can be nested anywhere.</p>
-            </section>
-
-            <section>
-                <div>a</div>
-                <div data-markdown>
-                    <script type="text/template">
-                        ```HTML
-                        <a href="http://www.w3school.com.cn/">W3School</a>
-                        <a href="http://www.w3school.com.cn/" target="_self">W3School</a>
-                        <a href="http://www.w3school.com.cn/" target="_blank">W3School</a>
-                        ```
-                    </script>
-                </div>
-                <a href="http://www.w3school.com.cn/">W3School</a>
-                <a href="http://www.w3school.com.cn/" target="_self">W3School</a>
-                <a href="http://www.w3school.com.cn/" target="_blank">W3School</a>
-            </section>
-
-            <section>
-                <h3>Inline Block Tags</h3>
-                <p> img, input, select</p>
-            </section>
-
-            <section>
-                <div>img</div>
-
-                <div data-markdown>
-                    <script type="text/template">
-                        ```HTML
-                        <img src="images/box-model.png" alt="box model" title="box model image">
-                        ```
-                    </script>
-                </div>
-                <img src="images/box-model.png" alt="box model" title="box model image">
             </section>
 
             <section>
@@ -524,13 +553,6 @@
         <!-- Html dom structure -->
 
         <section>
-            <section>
-                <h3>Html dom structure</h3>
-            </section>
-            <section>
-                <h3>example</h3>
-                <img src="images/dom-structure.gif">
-            </section>
             <section>
                 <h3>Review tags</h3>
                 <ul>
