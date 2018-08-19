@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>reveal.js</title>
+    <title>3weeks-3pages-css-basic</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
     <!-- Theme used for syntax highlighting of code -->
@@ -24,11 +24,11 @@
         <section>
           <h3>CSS 基础</h3>
           <ul>
-            <li>What's CSS</li>
-            <li>How to wirte CSS</li>
-            <li>How CSS works</li>
-            <li>Box model</li>
-            <li>Layout properties</li>
+            <li><a>What's CSS</a></li>
+            <li><a href="css-basic.html#/2">How to wirte CSS</a></li>
+            <li><a href="css-basic.html#/3">How CSS works</a></li>
+            <li><a href="css-basic.html#/4">Box model</a></li>
+            <li><a href="css-basic.html#/5">Layout properties</a></li>
           </ul>
         </section>
         <section>
@@ -52,7 +52,7 @@
             <h3>How to write CSS?</h3>
           </section>
           <section>
-            <div data-markdown class="text-code hljs">
+            <div data-markdown class="hljs">
               <script type="text/template">
                 ```CSS
                 selector {
@@ -72,7 +72,7 @@
           </section>
             <section>
               Example
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
                   <h3>HELLO, KITTY!</h3>
@@ -86,7 +86,7 @@
                   hello, kitty!
               </h3>
               <div class="fragment roll-in">
-                <div data-markdown class="text-code hljs">
+                <div data-markdown class="hljs">
                   <script type="text/template">
                     ```CSS
                     h3 {
@@ -127,7 +127,7 @@
           </section>
             <section>
               <p>1. Adding inline CSS to HTML tags</p>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ``` HTML
                   <span style="color: red; background: lightblue;">
@@ -140,7 +140,7 @@
 
             <section>
               <p>2. Embedding CSS into the HTML</p>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
                   <head>
@@ -161,7 +161,7 @@
 
             <section>
               <p>3. Linking to a separate CSS file</p>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
                   <head>
@@ -172,7 +172,7 @@
               </div>
               <div class="fragment roll-in">
                 main.css
-                <div data-markdown class="text-code hljs">
+                <div data-markdown class="hljs">
                   <script type="text/template">
                     ```CSS
                     .cat {
@@ -186,7 +186,7 @@
             </section>
             <section>
               <p>4. Importing a CSS file from within CSS</p>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
                   <style type="text/css">
@@ -220,7 +220,7 @@
               </ul>
             </section>
              <section>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ### Tag
                   ```HTML
@@ -241,7 +241,7 @@
               </div>
             </section>
              <section>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ### id
                   ```HTML
@@ -259,7 +259,7 @@
               <p class="fragment" style="font-size: 40px; color: pink; text-shadow: none;">Hello kitty</p>
             </section>
             <section>
-              <div data-markdown class="text-code hljs">
+              <div data-markdown class="hljs">
                 <script type="text/template">
                   ### class
                   ```HTML
@@ -281,7 +281,7 @@
             </section>
             <section>
              <h3>Multiple class</h3>
-             <div data-markdown class="text-code hljs">
+             <div data-markdown class="hljs">
               <script type="text/template">
                 ```html
                 <p>I have a <span class="cat animal">cat</span>!</p>
@@ -302,7 +302,7 @@
           </section>
           <section>
             <h3>!important</h3>
-            <div data-markdown class="text-code hljs">
+            <div data-markdown class="hljs">
               <script type="text/template">
                 ```
                 <p style="color: blue;">Hello kitty!</p>
@@ -336,21 +336,225 @@
             <section>
               <p>box-sizing: border-box;</p>
             </section>
+            <style type="text/css">
+              .box {
+                margin: 20px !important;
+                padding: 20px !important;
+                border: 10px solid red !important;
+                width: 400px !important;
+                height: 200px !important;
+              }
+            </style>
              <section>
-              <img src="images/box-model.png" alt="" style="width: 600px;">
-              <div data-markdown class="text-code hljs">
+              <div class="box">
+                box
+              </div>
+              <div data-markdown class="hljs">
                 <script type="text/template">
+                  ```HTML
+                  <div class="box">box</div>
+                  ```
                   ``` CSS
-                  margin: 20px;
-                  padding: 10px;
-                  border: 5px solid red;
-                  width: 100px;
-                  height: 50px;
+                  .box {
+                    margin: 20px;
+                    padding: 10px;
+                    border: 5px solid red;
+                    width: 100px;
+                    height: 50px;
+                  }
                   ```
                 </script>
               </div>
+              <p class="fragment">Question: What's actural width in brower?</p>
+              <p class="fragment">W3C: 120px | IE: 100px</p>
             </section>
-        </section>    
+        </section>
+        <section>
+          <section>
+            <h3>Layout properties</h3>
+          </section>
+          <section>
+            <h3>DISPLAY</h3>
+            <p class="fragment highlight-blue">display: block
+              <span class="t-gray">|</span> inline
+              <span class="t-gray">|</span> inline-block
+              <span class="t-gray">|</span> table
+              <span class="t-gray">|</span> none
+            </p>
+            <div class="fragment roll-in">
+              <img src="images/display.png" alt="">
+            </div>
+          </section>
+          <section>
+            <h3>Block</h3>
+            <ul>
+              <li>width,max-width,min-width</li>
+              <li>height,max-height,min-height</li>
+              <li>margin</li>
+              <li>padding</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Inline</h3>
+            <ul>
+              <li>margin-left, margin-right</li>
+              <li>padding</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Inline-Block</h3>
+          </section>
+          <section>
+            <h3>float & position</h3>
+          </section>
+          <section>
+            <h3>float</h3>
+            <p>float: left | right | none</p>
+            <div style="margin:0 -100px">
+              <span class="fragment roll-in t-gray">
+                  <img src="images/f1.png" alt="">
+              </span>
+              <small class="fragment roll-in t-gray" style="margin:0 10px;margin-top:100px;">
+                .div2 {float:left;}
+              </small>
+              <span class="fragment roll-in t-gray">
+                  <img src="images/f2.png" alt="" style="vertical-align:top">
+              </span>
+
+              <h4 class="fragment">Why?</h4>
+            </div>
+          </section> 
+          <section>
+            <h3>clear</h3>
+            <p>clear: none | left | right | both</p>
+            <div>
+              <img src="images/float-1.png" style="width: 300px;height: 300px;" >
+              <img src="images/float-all.png" style="width: 300px;height: 300px;">
+              <img src="images/clear-float.png" style="width: 300px;height: 300px;">
+            </div>
+          </section>
+          <section>
+            <h2>POSITION</h2>
+            <p>postion: static | relative | absolute | fixed;</p>
+          </section>
+          <section>
+            <p>position:<span class="t-blue"> relative</span></p>
+            <p class="fragment roll-in t-gray">relative to itself, no effect on it's positioning</p>
+          </section> 
+          <section>
+            <p>position:<span class="t-blue">absolute</span></p>
+            <p class="fragment roll-in t-gray">positioned relative to the next parent element with relative (or absolute) positioning</p>
+          </section>
+          <style>
+            .c-pa {
+              width: 300px;
+              height: 200px;
+              margin: 40px auto 0 !important;
+              position: relative;
+              background-color: red !important;
+            }
+            .c-p-3 {
+              width: 100px;
+              height: 100px;
+              border: 1px solid #ccc !important;
+              position: absolute;
+              bottom: 0;
+              right: 20px;
+              line-height: 100px !important;
+              font-size: 14px !important;
+            }
+            .c-p-4 {
+              width: 100px;
+              height: 100px;
+              font-size: 14px !important; 
+              border: 1px solid #ccc !important;
+            }
+          </style>
+          <section>
+            <pre class="fragment roll-in">
+              <code>
+                .parent {
+                  position: relative;
+                }
+                .absolute {
+                  position:absolute;
+                  right:20px;
+                  bottom:0;
+                }
+              </code>
+            </pre>
+            <div class="fragment roll-in c-pa">
+              <div class="c-p-4">normal</div>
+              <div class="fragment roll-in c-p-3">absolute</div>
+            </div>
+          </section>
+          <section>
+            <p>position:<span class="t-blue">fixed</span></p>
+            <p class="fragment roll-in t-gray">positioned relative the browser window</p>
+            <p class="fragment">top, right, bottom, left</p>
+          </section>
+           <style>
+            .parent {
+              width: 300px;
+              height: 200px;
+              margin: 40px auto 0 !important;
+              position: relative;
+              background-color: #333 !important;
+            }
+
+            .child {
+              width: 160px;
+              height: 160px;
+              position: absolute;
+              font-size: 14px !important;
+              line-height: 160px !important;
+            }
+
+            .z-index-2 {
+              background-color: #369;
+              top: 0;
+              left: 0;
+              z-index: 2;
+            }
+
+            .z-index-1 {
+              background-color: #c00;
+              right: 0;
+              bottom: 0;
+              z-index: 1;
+            }
+          </style>
+          <section>
+            <h3>Z-INDEX</h3>
+            <div data-markdown class="hljs">
+              <script type="text/template">
+                ``` CSS
+                .parent {position: relative;}
+                .z-index-1 {position:absolut; background-color:red; right:0; bottom:0; z-index:1;}
+                .z-index-2 {position:absolut; background-color:blue; top:0; left:0; z-index:2;}
+                ```
+              </script>
+            </div>
+            <div class="fragment roll-in parent">
+              <div class="child z-index-2">z-index-2</div>
+              <div class="child z-index-1">z-index-1</div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section style="text-align: left;">
+
+            <h1>Q & A</h1>
+            <p>
+              - <a href="http://www.htmldog.com/guides/html/">HTML Tutorial</a> <br>
+              - <a href="http://www.htmldog.com/guides/css/">CSS Tutorial</a> <br>
+              - <a href="http://www.w3.org/TR/css/">http://www.w3.org/TR/css</a> <br>
+              - <a href="https://developer.mozilla.org/en/docs/Web/CSS/Specificity">Specificity</a> <br>
+              - <a href="http://www.caniuse.com">Can I Use</a>
+            </p>
+          </section>
+
+        </section> 
       </div>
     </div>
 
