@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>三周三页面</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -76,69 +76,53 @@
                 <h3>Front-end technology</h3>
             </section>
 
+            <section style="overflow: auto; max-height: 100vh;">
+                <img src="images/FrontEnd-tech.jpg">
+            </section>
+
             <section>
                 <h3>Web page</h3>
-                <p>structure: HTML</p>
-                <p>appearance: CSS</p>
+                <p><span class="font-blue">structure</span>: HTML</p>
+                <p><span class="font-blue">appearance</span>: CSS</p>
             </section>
 
-            <section>
-                <ul class="three-technical">
-                    <li>
-                        <span class="title">HTML</span> ->
-                        <span class="font-pink">Content</span>
-                        + Style + Interaction
-                    </li>
-                    <li>
-                        <span class="title">CSS</span> ->
-                        <span class="font-pink">Style</span>
-                        + Content + Interaction
-                    </li>
-                    <li>
-                        <span class="title">Javascript</span> ->
-                        <span class="font-pink">Interaction</span>
-                        + Content + Style
-                    </li>
-                </ul>
-            </section>
+            <!--<section>-->
+            <!--<div data-markdown>-->
+            <!--<script type="text/template">-->
+            <!--### Html5 controls styling-->
+            <!--```HTML-->
+            <!--<progress value="22" max="100"></progress>-->
+            <!--```-->
+            <!--</script>-->
+            <!--</div>-->
+            <!--<div class="bg-container">-->
+            <!--<progress value="22" max="100"></progress>-->
+            <!--</div>-->
+            <!--</section>-->
 
-            <section>
-                <div data-markdown>
-                    <script type="text/template">
-                        ### Html5 controls styling
-                        ```HTML
-                        <progress value="22" max="100"></progress>
-                        ```
-                    </script>
-                </div>
-                <div class="bg-container">
-                    <progress value="22" max="100"></progress>
-                </div>
-            </section>
+            <!--<section>-->
+            <!--<div data-markdown>-->
+            <!--<script type="text/template">-->
+            <!--### CSS3 controls interaction-->
+            <!--```HTML-->
+            <!--<style>-->
+            <!--.my-div {-->
+            <!--width: 100px;-->
+            <!--height: 100px;-->
+            <!--background: #f04e98;-->
+            <!--transition: width 2s;-->
+            <!--}-->
 
-            <section>
-                <div data-markdown>
-                    <script type="text/template">
-                        ### CSS3 controls interaction
-                        ```HTML
-                        <style>
-                            .my-div {
-                                width: 100px;
-                                height: 100px;
-                                background: #f04e98;
-                                transition: width 2s;
-                            }
-
-                            .my-div:hover {
-                                width: 300px;
-                            }
-                        </style>
-                        <div class="my-div"></div>
-                        ```
-                    </script>
-                </div>
-                <div class="my-div"></div>
-            </section>
+            <!--.my-div:hover {-->
+            <!--width: 300px;-->
+            <!--}-->
+            <!--</style>-->
+            <!--<div class="my-div"></div>-->
+            <!--```-->
+            <!--</script>-->
+            <!--</div>-->
+            <!--<div class="my-div"></div>-->
+            <!--</section>-->
         </section>
 
         <!-- What's html -->
@@ -147,9 +131,9 @@
             <section>
                 <h3>HTML</h3>
                 <p class=" fragment roll-in">
-                    <span class="font-pink">HTML</span> stands for <span class="font-pink">H</span>yper<span
-                        class="font-pink">T</span>ext <span class="font-pink">M</span>arkup <span
-                        class="font-pink">L</span>anguage
+                    <span class="font-blue">HTML</span> stands for <span class="font-blue">H</span>yper<span
+                        class="font-blue">T</span>ext <span class="font-blue">M</span>arkup <span
+                        class="font-blue">L</span>anguage
                 </p>
             </section>
             <section>
@@ -165,12 +149,14 @@
 
             <section>
                 <h3>HTML history</h3>
-                <p>Physicist Tim Berners-Lee</p>
-                <p>1980 - prototype ENQUIRE</p>
-                <p>1989 - propose an Internet-based hypertext system</p>
-                <p>1990 - write the browser and web server</p>
-                <p>1991 - first public description</p>
-                <p>1993 - Internet Engineering Task Force - first proposal for an HTML specification</p>
+                <div style="text-align: left">
+                    <p>Physicist Tim Berners-Lee</p>
+                    <p>1980 - prototype ENQUIRE</p>
+                    <p>1989 - propose an Internet-based hypertext system</p>
+                    <p>1990 - write the browser and web server</p>
+                    <p>1991 - first public description</p>
+                    <p>1993 - Internet Engineering Task Force - first proposal for an HTML specification</p>
+                </div>
             </section>
 
             <section>
@@ -193,8 +179,8 @@
                 <div data-markdown class="text-code">
                     <script type="text/template">
                         ```HTML
-                        <br/>
                         <br>
+                        <br/>
                         <input type="text">
                         ```
                     </script>
@@ -319,7 +305,6 @@
                         ```
                     </script>
                 </div>
-                <p>H1 can only be used once, but h2~h6 can be used multiple times.</p>
                 <a href="example/hello.html" target="_blank">Example</a>
             </section>
 
@@ -392,7 +377,7 @@
                 <div data-markdown>
                     <script type="text/template">
                         ```HTML
-                        <img src="images/box-model.png" alt="box model" title="box model image">
+                        <img src="images/box-model.png" alt="box model">
                         ```
                     </script>
                 </div>
@@ -443,6 +428,17 @@
             <section>
                 <h3>form</h3>
                 <div>form, label, input</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <label for="name">name</label>
+                        <input id="name" placeholder="name">
+                        <label for="password">password</label>
+                        <input id="password" placeholder="password">
+                        <input type="submit">
+                        ```
+                    </script>
+                </div>
                 <form>
                     <label for="name">name</label>
                     <input id="name" placeholder="name">
@@ -453,54 +449,7 @@
             </section>
 
             <section>
-                <h3>List-ul</h3>
-                <div>ul, ol, li</div>
-                <div data-markdown>
-                    <script type="text/template">
-                        ```HTML
-                        <ul>
-                            <li>Apple</li>
-                            <li>Pear</li>
-                            <li>Banana</li>
-                        </ul>
-                        ```
-                    </script>
-                </div>
-                <ul>
-                    <li>Apple</li>
-                    <li>Pear</li>
-                    <li>Banana</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>List-ol</h3>
-                <div>ul, ol, li</div>
-                <div data-markdown>
-                    <script type="text/template">
-                        ```HTML
-                        <ol>
-                            <li>Open the fridge</li>
-                            <li>Put an elephant into the fridge</li>
-                            <li>Close the fridge</li>
-                        </ol>
-                        ```
-                    </script>
-                </div>
-                <ol>
-                    <li>Open the fridge</li>
-                    <li>Put an elephant into the fridge</li>
-                    <li>Close the fridge</li>
-                </ol>
-            </section>
-
-            <section>
-                <h3>span</h3>
-                <p>Can be nested anywhere.</p>
-            </section>
-
-            <section>
-                <div>input</div>
+                <h3>input</h3>
                 <p>[text, checkbox, radio, password, button]</p>
                 <div data-markdown>
                     <script type="text/template">
@@ -523,6 +472,62 @@
             </section>
 
             <section>
+                <h3>List-ul</h3>
+                <div>ul, li</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <ul>
+                            <li>Apple</li>
+                            <li>Pear</li>
+                            <li>Banana</li>
+                        </ul>
+                        ```
+                    </script>
+                </div>
+                <ul>
+                    <li>Apple</li>
+                    <li>Pear</li>
+                    <li>Banana</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>List-ol</h3>
+                <div>ol, li</div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <ol>
+                            <li>Open the fridge</li>
+                            <li>Put an elephant into the fridge</li>
+                            <li>Close the fridge</li>
+                        </ol>
+                        ```
+                    </script>
+                </div>
+                <ol>
+                    <li>Open the fridge</li>
+                    <li>Put an elephant into the fridge</li>
+                    <li>Close the fridge</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>span</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+                        ```
+                    </script>
+                </div>
+                <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+                <p>Span tag provides no visual change by itself.</p>
+                <p>Span tag provides a way to add a hook to a part of a text or a part of a document.</p>
+            </section>
+
+            <section>
                 <h3>Character</h3>
                 <p>&amp;lt; &amp;gt; &amp;nbsp; &amp;copy;</p>
                 <p>&lt; &gt; &nbsp; &copy;</p>
@@ -539,11 +544,12 @@
 
             <section>
                 <p>Semantic elements = elements with a meaning</p>
-                <img src="images/semantic-html-compare.png" >
+                <img src="images/semantic-html-compare.png">
             </section>
 
             <section>
-                <p>the semantic use of HTML elements “enhances accessibility, searchability, internationalization, and interoperability.”</p>
+                <p>the semantic use of HTML elements “enhances accessibility, searchability, internationalization, and
+                    interoperability.”</p>
             </section>
 
             <section>
