@@ -16,11 +16,11 @@
 
     <!-- Printing and PDF exports -->
     <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
     </script>
 </head>
 <body>
@@ -634,6 +634,197 @@
             </section>
         </section>
 
+    <section>
+      <h3>CSS 基础</h3>
+      <ul>
+          <li>What's CSS</li>
+          <li>How to wirte CSS</li>
+          <li>How CSS works</li>
+          <li>Box model</li>
+          <li>Layout properties</li>
+      </ul>
+    </section>
+        <section>
+            <section>
+                <h2>CSS</h2>
+                <p style="font-variant: small-caps;"><span class="font-pink">C</span>ascading <span
+                        class="font-pink">S</span>tyle <span class="font-pink">S</span>heet</p>
+                <p class="fragment roll-in">层叠样式表</p>
+            </section>
+            <section>
+                <h3>HTML</h3>
+                <img width="600" src="images/house-withoutcss.jpg"/>
+            </section>
+            <section>
+                <h3>HTML+CSS</h3>
+                <img width="600" src="images/house-withcss.jpg"/>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>How to write CSS?</h3>
+            </section>
+            <section>
+                <div data-markdown class="text-code hljs">
+                    <script type="text/template">
+                        ```CSS
+                        selector {
+                        property: value;
+                        property: value;
+                        ...
+                        }
+                        ```
+                    </script>
+                </div>
+
+                <div class="text-code-super fragment roll-in">
+                    h1 {
+                    color: <span>orange;</span>
+                    }
+                </div>
+            </section>
+            <section>
+                Example
+                <div data-markdown class="text-code hljs">
+                    <script type="text/template">
+                        ```HTML
+                        <h3>HELLO, KITTY!</h3>
+                        ```
+                    </script>
+                </div>
+
+                <h3>Hello, kitty!</h3>
+
+                <h3 class="fragment roll-in" style="color: purple; background-color: lightblue;">
+                    hello, kitty!
+                </h3>
+                <div class="fragment roll-in">
+                    <div data-markdown class="text-code hljs">
+                        <script type="text/template">
+                            ```CSS
+                            h3 {
+                            color: purple;
+                            background-color: lightblue;
+                            }
+                            ```
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>CSS Attribute & Value</h3>
+                <div class="text-code-middle hljs">
+                    <em>width: </em><span class="fragment">300px/em/rem;</span><br>
+                    <em>height: </em><span class="fragment">100px;</span><br>
+                    <em>background-color: </em><span class="fragment">rgba(255,255,255,0);</span><br>
+                    <em>color: </em><span class="fragment">blue/#f1f1f1;</span><br>
+                    <em>font-size: </em><span class="fragment">14px;</span><br>
+                    <em>margin: </em><span class="fragment">20px;</span><br>
+                    <em>padding: </em><span class="fragment">10px;</span><br>
+                    <em>border: </em><span class="fragment">2px solid red;</span><br>
+                    <em>...</em><span class="fragment">...</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>How CSS works</h3>
+                <ul>
+                    <li>How to link css to html?</li>
+                    <li>Selector</li>
+                </ul>
+            </section>
+            <section>
+                <h3>How to link css?</h3>
+                <img width="800" src="images/css-link.png"/>
+            </section>
+            <section>
+                <p>1. Adding inline CSS to HTML tags</p>
+                <div data-markdown class="text-code hljs">
+                    <script type="text/template">
+                        ``` HTML
+                        <span style="color: red; background: lightblue;">
+                        Jerry
+                    </span>
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <p>2. Embedding CSS into the HTML</p>
+                <div data-markdown class="text-code hljs">
+                    <script type="text/template">
+                        ```HTML
+                        <head>
+                            <style>
+                                .cat {
+                                    font-size: 30px;
+                                    margin: 60px auto 10px;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                        <div class="cat">Tom</div>
+                        </body>
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <p>3. Linking to a separate CSS file</p>
+                <div data-markdown class="text-code hljs">
+                    <script type="text/template">
+                        ```HTML
+                        <head>
+                            <link rel="stylesheet" href="stylesheet/main.css">
+                        </head>
+                        ```
+                    </script>
+                </div>
+                <div class="fragment roll-in">
+                    main.css
+                    <div data-markdown class="text-code hljs">
+                        <script type="text/template">
+                            ```CSS
+                            .cat {
+                            font-size: 30px;
+                            margin: 60px auto 10px;
+                            }
+                            ```
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p>4. Importing a CSS file from within CSS</p>
+                <div data-markdown class="text-code hljs">
+                    <script type="text/template">
+                        ```HTML
+                        <style type="text/css">
+                            @import "newstyles.css";
+                        </style>
+
+                        ```
+                    </script>
+                </div>
+            </section>
+            <section>
+                <h3>Selector</h3>
+            </section>
+            <section>
+                <h3>Basic Selectors</h3>
+                <ul>
+                    <li>Tag selectors &rarr; <em class="color-orange">tagName</em></li>
+                    <li>ID selectors &rarr; <em class="color-orange">#idName</em></li>
+                    <li>Class selectors &rarr; <em class="color-orange">.className</em></li>
+                    <li>Attribute &rarr; <em class="color-orange">[attr=value], [type='text']</em></li>
+                    <li>Universal selectors &rarr; <em class="color-orange">*</em></li>
+                </ul>
+            </section>
+        </section>
+
     </div>
 </div>
 
@@ -641,21 +832,22 @@
 <script src="js/reveal.js"></script>
 
 <script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        dependencies: [
-            {src: 'plugin/markdown/marked.js'},
-            {src: 'plugin/markdown/markdown.js'},
-            {src: 'plugin/notes/notes.js', async: true},
-            {
-                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-                    hljs.initHighlightingOnLoad();
-                }
-            }
-        ]
-    });
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    transition: "convex",
+    dependencies: [
+      { src: 'plugin/markdown/marked.js' },
+      { src: 'plugin/markdown/markdown.js' },
+      { src: 'plugin/notes/notes.js', async: true },
+      {
+        src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      }
+    ]
+  });
 </script>
 </body>
 </html>
