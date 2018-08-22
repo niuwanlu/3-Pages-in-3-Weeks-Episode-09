@@ -34,7 +34,7 @@
         <section>
           <section>
             <h2>CSS</h2>
-            <p style="font-variant: small-caps;"><span class="font-pink">C</span>ascading <span
+            <p class="fragment" style="font-variant: small-caps;"><span class="font-pink">C</span>ascading <span
                     class="font-pink">S</span>tyle <span class="font-pink">S</span>heet</p>
             <p class="fragment roll-in">层叠样式表</p>
           </section>
@@ -143,17 +143,20 @@
               <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
-                  <head>
-                    <style>
-                      .cat {
-                          font-size: 30px;
-                          margin: 60px auto 10px;
-                      }
-                    </style>
-                  </head>
-                  <body>
-                    <div class="cat">Tom</div>
-                  </body>
+                  <!DOCTYPE html>
+                  <html>
+                    <head>
+                      <style>
+                        .cat {
+                            font-size: 30px;
+                            margin: 60px auto 10px;
+                        }
+                      </style>
+                    </head>
+                    <body>
+                      <div class="cat">Tom</div>
+                    </body>
+                  </html>
                   ```
                 </script>
               </div>
@@ -164,9 +167,15 @@
               <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
-                  <head>
-                    <link rel="stylesheet" href="stylesheet/main.css">
-                  </head>
+                  <!DOCTYPE html>
+                  <html>
+                    <head>
+                      <link rel="stylesheet" href="stylesheet/main.css">
+                    </head>
+                    <body>
+                    
+                    </body>
+                  </html>
                   ```
                 </script>
               </div>
@@ -189,9 +198,14 @@
               <div data-markdown class="hljs">
                 <script type="text/template">
                   ```HTML
-                  <style type="text/css">
-                    @import "newstyles.css";
-                  </style>
+                  <!DOCTYPE html>
+                  <html>
+                    <head>
+                      <style type="text/css">
+                        @import "newstyles.css";
+                      </style>
+                    </head>
+                  </html>
 
                   ```
                 </script>
@@ -199,6 +213,7 @@
             </section>
             <section>
                 <h3>Selector</h3>
+                <p class="fragment">Used to select the element(s) you want to style.</p>
             </section>
             <section>
               <h3>Basic Selectors</h3>
@@ -323,7 +338,7 @@
               <div>
                 <img style="width: 600px" src="images/h1.jpg" alt="">
               </div>
-              <div class="fragment roll-in">width = content-width</div>
+              <div class="fragment roll-in">RealWidth = width + padding + border</div>
             </section>
 
             <section>
@@ -331,10 +346,7 @@
               <div>
                 <img style="width: 600px" src="images/h2.jpg" alt="">
               </div>
-              <div class="fragment roll-in">width = content-width + padding + border</div>
-            </section>
-            <section>
-              <p>box-sizing: border-box;</p>
+              <div class="fragment roll-in">RealWidth = width</div>
             </section>
             <style type="text/css">
               .box {
@@ -357,16 +369,23 @@
                   ``` CSS
                   .box {
                     margin: 20px;
-                    padding: 10px;
-                    border: 5px solid red;
-                    width: 100px;
-                    height: 50px;
+                    padding: 20px;
+                    border: 10px solid red;
+                    width: 400px;
+                    height: 200px;
                   }
                   ```
                 </script>
               </div>
-              <p class="fragment">Question: What's actural width in brower?</p>
-              <p class="fragment">W3C: 120px | IE: 100px</p>
+              <p class="fragment">Question: What's actural width in brower (W3C and IE)?</p>
+            </section>
+            <section>
+              <h4>Answer</h4>
+              <p class="fragment">W3C: 460px | IE: 400px</p>
+              <br>
+              <h4 class="fragment">How to handle this?</h4>
+              <div class="fragment">
+                <p style="color: red">box-sizing: border-box | content-box;</p>
             </section>
         </section>
         <section>
@@ -375,7 +394,7 @@
           </section>
           <section>
             <h3>DISPLAY</h3>
-            <p class="fragment highlight-blue">display: block
+            <p class="highlight-blue">display: block
               <span class="t-gray">|</span> inline
               <span class="t-gray">|</span> inline-block
               <span class="t-gray">|</span> table
@@ -403,6 +422,9 @@
           </section>
           <section>
             <h3>Inline-Block</h3>
+            <p>Has both behavior of Inline and Block element.</p>
+
+            <h4 class="fragment"><a href="https://codepen.io/crystalynliu/pen/xabzEY">example</a></h4>
           </section>
           <section>
             <h3>float & position</h3>
@@ -410,28 +432,18 @@
           <section>
             <h3>float</h3>
             <p>float: left | right | none</p>
-            <div style="margin:0 -100px">
-              <span class="fragment roll-in t-gray">
-                  <img src="images/f1.png" alt="">
-              </span>
-              <small class="fragment roll-in t-gray" style="margin:0 10px;margin-top:100px;">
-                .div2 {float:left;}
-              </small>
-              <span class="fragment roll-in t-gray">
-                  <img src="images/f2.png" alt="" style="vertical-align:top">
-              </span>
 
-              <h4 class="fragment">Why?</h4>
-            </div>
+            <h4 class="fragment"><a href="https://codepen.io/crystalynliu/pen/NLPMmQ">example</a></h4>
           </section> 
           <section>
             <h3>clear</h3>
             <p>clear: none | left | right | both</p>
-            <div>
+            <div class="fragment">
               <img src="images/float-1.png" style="width: 300px;height: 300px;" >
               <img src="images/float-all.png" style="width: 300px;height: 300px;">
               <img src="images/clear-float.png" style="width: 300px;height: 300px;">
             </div>
+            <h4 class="fragment"><a href="https://codepen.io/crystalynliu/pen/NLPMmQ">example</a></h4>
           </section>
           <section>
             <h2>POSITION</h2>
@@ -440,6 +452,8 @@
           <section>
             <p>position:<span class="t-blue"> relative</span></p>
             <p class="fragment roll-in t-gray">relative to itself, no effect on it's positioning</p>
+
+            <h4 class="fragment"><a href="https://codepen.io/crystalynliu/pen/rZVaQe">example</a></h4>
           </section> 
           <section>
             <p>position:<span class="t-blue">absolute</span></p>
@@ -487,6 +501,7 @@
               <div class="c-p-4">normal</div>
               <div class="fragment roll-in c-p-3">absolute</div>
             </div>
+            <h4 class="fragment"><a href="https://codepen.io/crystalynliu/pen/rZVaQe">example</a></h4>
           </section>
           <section>
             <p>position:<span class="t-blue">fixed</span></p>
@@ -539,16 +554,14 @@
               <div class="child z-index-2">z-index-2</div>
               <div class="child z-index-1">z-index-1</div>
             </div>
+            <h4 class="fragment"><a href="https://codepen.io/crystalynliu/pen/dqooXK">example</a></h4>
           </section>
         </section>
         <section>
           <section style="text-align: left;">
-
             <h1>Q & A</h1>
             <p>
-              - <a href="http://www.htmldog.com/guides/html/">HTML Tutorial</a> <br>
-              - <a href="http://www.htmldog.com/guides/css/">CSS Tutorial</a> <br>
-              - <a href="http://www.w3.org/TR/css/">http://www.w3.org/TR/css</a> <br>
+              - <a href="http://www.w3school.com.cn/css/index.asp">CSS W3school</a> <br>
               - <a href="https://developer.mozilla.org/en/docs/Web/CSS/Specificity">Specificity</a> <br>
               - <a href="http://www.caniuse.com">Can I Use</a>
             </p>
