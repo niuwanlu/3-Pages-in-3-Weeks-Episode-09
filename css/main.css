@@ -122,3 +122,15 @@ div.bg-container {
 .color-orange {
     color: orange;
 }
+
+.pull-left {
+    width: 46%;
+    float: left;
+    text-align: right;
+}
+
+.pull-right {
+    width: 46%;
+    float: right;
+    text-align: left;
+}
