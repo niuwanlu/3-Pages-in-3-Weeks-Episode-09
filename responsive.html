@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+</head>
+<body>
+
+<div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+        <section>
+            <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+            <h3>Responsive Web Design</h3>
+        </section>
+
+        <!-- 1. background -->
+        <section>
+            <section>
+                <h3>Background</h3>
+            </section>
+            <section>
+                <h3>Background</h3>
+                <div class="section-content">
+                    <h4>In "ancient" times</h4>
+                    <div class="single-img">
+                        <!--<img src="images/slide-01-01.jpg">-->
+                        <img src="images/responsive/responsive-media-1.png">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Background</h3>
+                <div class="section-content">
+                    <h4>Nowdays</h4>
+                    <div class="two-img-content">
+                        <div class="pull-left left-img">
+                            <!--<img src="images/slide-01-02.jpg" />-->
+                            <img src="images/responsive/responsive-media-2.png" />
+                        </div>
+                        <div class="pull-right right-img">
+                            <!--<img src="images/slide-01-03.png" />-->
+                            <img src="images/responsive/responsive-media-3.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Background</h3>
+                <div class="section-content">
+                    <h4>Surfing</h4>
+                    <div class="two-img-content-with-title">
+                        <div class="pull-left left-img">
+                            <p>before</p>
+                            <img src="images/slide-01-04.jpg" />
+                        </div>
+                        <div class="pull-right right-img">
+                            <p>now</p>
+                            <img src="images/slide-01-05.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- 2. Examples -->
+        <section>
+            <section>
+                <h3>Examples</h3>
+            </section>
+            <section>
+                <h3>Examples</h3>
+                <div class="section-content">
+                    <h4>Example 1</h4>
+                    <div class="two-img-content">
+                        <div class="pull-left left-img" style="width: 60%;">
+                            <img src="images/slide-02-01-01.png" />
+                        </div>
+                        <div class="pull-right right-img" style="width: 35%;">
+                            <img src="images/slide-02-01-02.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Examples</h3>
+                <div class="section-content">
+                    <h4>Example 2</h4>
+                    <div class="single-img">
+                        <img src="images/slide-02-02.jpg">
+                    </div>
+                </div>
+            </section>
+            <!--<section>
+              <h3>Examples</h3>
+              <div class="section-content">
+                  <h4 class="mt-160">Which one you prefer ?</h4>
+              </div>
+            </section>  -->
+        </section>
+
+        <section>
+            <section>
+                <h3>What is Responsive Web Design</h3>
+            </section>
+            <section>
+                <h3>RWD <strong style="font-size: 100px">VS</strong> AWD</h3>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3>AWD</h3>
+                    <div class="two-content">
+                        <div class="pull-left">
+                            <p><span>A</span>daptive<br/><span>W</span>eb<br/><span>D</span>esign</p>
+                        </div>
+                        <div class="pull-right">
+                            <p>自适应<br/>网页<br/>设计</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3>RWD</h3>
+                    <div class="two-content">
+                        <div class="pull-left">
+                            <p>
+                                <span>R</span>esponsive<br/><span>W</span>eb<br/><span>D</span>esign</p>
+                        </div>
+                        <div class="pull-right">
+                            <p>响应式<br/>网页<br/>设计</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+                    <section data-background="#fff">
+                        <img src="images/responsive/RWD-AWD.png" alt="" style="box-shadow:none;height:100%;width:80%">
+                    </section>-->
+
+            <!--<section>
+              <h3>3. Introduction</h3>
+              <div class="section-content">
+                  <h4>Description on Wiki</h4>
+                  <div class="single-content">
+                    <br/>
+                    <br/>
+                    <p>
+      Responsive web design (RWD) is <span class="green">an approach</span> to web design aimed at crafting sites <span class="green">to provide an optimal viewing experience</span>—easy reading and navigation with a minimum of resizing, panning, and scrolling—<span class="green">across a wide range of devices</span> (from desktop computer monitors to mobile phones).
+                    </p>
+                  </div>
+              </div>
+            </section>-->
+            <!--<section>-->
+            <!--<div class="section-content">-->
+            <!--<h3 class="text-left">Characteristics of RWD</h3>-->
+            <!--<div class="list-content">-->
+            <!--<ul>-->
+            <!--<li>One url. (<s>m.hello.com</s>; hello.com)</li>-->
+            <!--<li>One page/code.</li>-->
+            <!--<li>One content.</li>-->
+            <!--<li>Adapt multiple devices.</li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</section>-->
+            <!--<section>
+              <h3>Introduction</h3>
+              <div class="section-content">
+                  <br/>
+                  <br/>
+                  <h4 class="text-left">Advantages of RWD:</h4>
+                  <div class="list-content">
+                    <ul>
+      <li>Lower cost, easy to learn. </li>
+      <li>Across platforms and devices. </li>
+      <li>No need to be installed. </li>
+      <li>Easy to update. </li>
+      <li>Better user expeirences.</li>
+                    </ul>
+                  </div>
+              </div>
+            </section>-->
+            <section>
+                <div class="section-content">
+                    <h3>RWD in one image</h3>
+                    <div class="single-img" style="display: flex;">
+                        <img src="images/slide-03-01.jpg">
+                        <ul style="margin-left: 50px;">
+                            <li>One url. <small>(<s>m.hello.com</s>; hello.com)</small></li>
+                            <li>One page/code.</li>
+                            <li>One content.</li>
+                            <li>Adapt multiple devices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h3>How?</h3>
+            </section>
+
+            <section class="bg-lightgray darkgray">
+                <h3>Layout Patterns</h3>
+                <div>
+                    <ul>
+                        <li><a href="http://simplebits.com/" target="_blank">Mostly fluid</a></li>
+                        <li><a href="https://modernizr.com/" target="_blank">Column drop</a></li>
+                        <li><a href="http://foodsense.is/" target="_blank">Layout shifter</a></li>
+                        <li><a href="http://futurefriendlyweb.com/" target="_blank">Tiny tweaks</a></li>
+                        <li><a href="https://thoughtworks.jiveon.com/#" target="_blank">Off canvas</a></li>
+                    </ul>
+                </div>
+                <br/>
+                <a href="http://www.lukew.com/ff/entry.asp?1514" target="_blank">Learn More</a>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries: Viewport</h3>
+
+                    <div class="">
+                        <h6>HTML</h6>
+                        <div data-markdown>
+                            <script type="text/template">
+                                ```HTML
+                                <meta name="viewport"
+                                      content="width=device-width; initial-scale=1.0" />
+                                ```
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h3>Pixels</h3>
+                    <ul>
+                        <li>device pixel</li>
+                        <li>css pixel</li>
+                        <li>pixel per inch</li>
+                        <li>device pixel ratio</li>
+                    </ul>
+                </div>
+                <a href="http://screensiz.es/" target="_blank">Screen Size</a>
+                <br>
+                <a href="https://github.com/jawil/blog/issues/21" target="_blank">Learn More Pixels</a>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries</h3>
+                    <div class="list-content">
+                        <ul>
+                            <li>A CSS3 feature.</li>
+                            <li>Different styles in different medias and resolutions.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fragment">
+                    <div data-markdown>
+                        <script type="text/template">
+                            ```CSS
+                            @media screen and (max-device-width: 480px) {
+                            // css...
+                            }
+
+                            ```
+                        </script>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries</h3>
+                    <H4>media types</H4>
+                    <ul>
+                        <li>all</li>
+                        <li>screen</li>
+                        <li>print</li>
+                        <li>...</li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries</h3>
+                    <H4>media features</H4>
+                    <ul>
+                        <li>width/height/min-width/device-width</li>
+                        <li>orientation</li>
+                        <li>device-aspect-ratio</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries</h3>
+                    <H4>media operators</H4>
+                    <ul>
+                        <li>and</li>
+                        <li>not</li>
+                        <li>only</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries</h3>
+                    <h6>HTML</h6>
+                    <div data-markdown>
+                        <script type="text/template">
+                            ```HTML
+                            <link href="css/common.css" rel="stylesheet"
+                                  type="text/css" media="all" />
+
+                            <link href="css/screen.css" rel="stylesheet"
+                                  type="text/css" media="screen" />
+
+                            <link href="css/print.css" rel="stylesheet"
+                                  type="text/css" media="print" />
+                            ```
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries: expressions</h3>
+                    <h6>HTML</h6>
+                    <div data-markdown>
+                        <script type="text/template">
+                            ```HTML
+                            <link href="css/screen.css" rel="stylesheet"
+                                  type="text/css" media="screen and (max-width: 600px)" />
+                            ```
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <!--<section>
+              <div class="section-content">
+                  <h3 class="text-left">Media Queries</h3>
+                  <h6>CSS</h6>
+                  <div data-markdown>
+                    <script type="text/template">
+                      ```CSS
+      @media screen {
+          .side {
+            display: block;
+          }
+      }
+
+      @media print {
+          .side {
+            display: none;
+          }
+      }
+                      ```
+                    </script>
+                 </div>
+              </div>
+            </section>-->
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries: expressions</h3>
+                    <h6>CSS</h6>
+                    <div data-markdown>
+                        <script type="text/template">
+                            ```CSS
+                            @media screen and (min-width: 1200px) {
+                            // css...
+                            }
+
+                            @media screen and (min-width: 768px) and (max-width: 980px) {
+                            // css...
+                            }
+
+                            @media screen and (max-device-width: 480px) {
+                            // css...
+                            }
+
+                            ```
+                        </script>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries: breakpoints</h3>
+                    <div>
+                        <img src="images/responsive/major-breakpoints.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries: breakpoints</h3>
+                    <div class="list-content">
+                        <ul>
+                            <li>Generally, 2 breakpoints could be just fine，which used for phone、pad、and desktop.</li>
+                            <li>Breakpoints are besed on design and designer.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>css3-mediaqueries.js</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```html
+                        <!--[if lt IE 9]>
+                        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">&lt;/script>
+                        <![endif]-->
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>Tricks</h3>
+                <ul>
+                    <li class="fragment roll-in t-gray">Mobile first or Desktop first</li>
+                    <li class="fragment roll-in t-gray">Use a fluid grid</li>
+                    <li class="fragment roll-in t-gray">Relative Unit: 100%, rem, vh, vw...</li>
+                    <li class="fragment roll-in t-gray">min-width, max-width</li>
+                    <li class="fragment roll-in t-gray">box-sizing</li>
+                    <li class="fragment roll-in t-gray">SVG</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>Tools</h3>
+                <div class="list-content fragment roll-in">
+                    <ul>
+                        <li>Chrome：Developer tools.</li>
+                        <li>Firefox: Developer -> Responsive views.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </section>
+
+        <section>
+            <section style="text-align: left;">
+
+                <h1>Q & A</h1>
+                <p>
+                    - <a href="https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/">CSS3 Media Queries</a> <br>
+                    - <a href="http://screensiz.es/" target="_blank">Screen Size</a><br>
+                    - <a href="https://github.com/jawil/blog/issues/21" target="_blank">Pixels</a><br>
+                    - <a href="https://dcurt.is/pixel-fitting" target="_blank">pixel-fitting</a><br>
+                    - <a href="http://www.caniuse.com">Can I Use</a>
+                </p>
+            </section>
+            <section>
+                <h3>Let's do a responsive web now</h3>
+                <!--<a href="example/rwd-example.html" target="_blank">Example</a>-->
+            </section>
+        </section>
+
+        </seciton>
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        transition: "convex",
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
