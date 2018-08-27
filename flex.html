@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>3weeks-3pages-flex</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body class="css-basic">
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h3>flex</h3>
+            <p class="fragment roll-in">Flexible Box</p>
+            <p class="fragment roll-in"> Aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic</p>
+          </section>
+          <section>
+            <h3>Basics & Terminology</h3>
+            <p>Flexbox is a whole set of properties not a signle property.</p>
+          </section>
+          <section>
+            <img src="./images/flexbox.png">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Properties for the Parent</h3>
+            <p>(flex container)</p>
+          </section>
+          <section>
+            <h3>Display</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  display: flex | inline-flex;
+                }
+                ```
+              </script>
+            </div>
+          </section>
+          <section>
+            <h3>flex-direction</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  flex-direction: row | row-reverse | column | column-reverse;
+                }
+                ```
+              </script>
+            </div>
+            <img class="fragment" src="./images/flex-direction2.svg">
+          </section>
+          <section>
+            <h3>flex-wrap</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  flex-wrap: nowrap | wrap | wrap-reverse;
+                }
+                ```
+              </script>
+            </div>
+            <h4>Demo</h4>
+          </section>
+          <section>
+            <h3>flex-flow</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  flex-flow: <'flex-direction'> || <'flex-wrap'>;
+                }
+                ```
+              </script>
+            </div>
+            <p>(Default is <strong>row</strong> <strong>nowrap</strong>)</p>
+          </section>
+
+          <section>
+            <h3>justify-content</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+                }
+                ```
+              </script>
+            </div>
+          </section>
+          <section>
+            <img style="height: 650px" src="./images/justify-content-2.svg" />
+          </section>
+          <section>
+            <h3>align-items</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  align-items: flex-start | flex-end | center | baseline | stretch;
+                }
+                ```
+              </script>
+            </div>
+            <p>Defalut is <strong>stretch</strong>.</p>
+          </section>
+          <section>
+            <img style="height: 650px" src="./images/align-items.svg" />
+          </section>
+          <section>
+            <h3>align-content</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .container {
+                  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+                }
+                ```
+              </script>
+            </div>
+            <p>Notice: No effect when there is only <strong>one line of flex items.</strong></p>
+          </section>
+          <section>
+            <img style="height: 650px" src="./images/align-content.svg" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Properties for the Children</h3>
+            <p>(flex items)</p>
+          </section>
+          <section>
+            <h3>order</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .item {
+                  order: <integer>; /* default is 0 */
+                }
+                ```
+              </script>
+            </div>
+          </section>
+          <section>
+            <h3>align-self</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .item {
+                  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+                }
+                ```
+              </script>
+            </div>
+            <p>Notice: This allows the default alignment (or the one specified by align-items) to be <strong>overridden</strong></p>
+          </section>
+          <section>
+            <img height="400px" src="./images/align-self.svg">
+          </section>
+          <section>
+            <h3>available space</h3>
+            <p>布局空白</p>
+            <img class="fragment" src="./images/Basics7.png">
+          </section>
+          <section>
+            <h3>flex-basis</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .item {
+                  flex-basis: <length> | auto; /* default auto */
+                }
+                ```
+              </script>
+            </div>
+            <p>Value of auto is definded by width of element or width of element content</p>
+          </section>
+          <section>
+            <h3>flex-grow</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .item {
+                  flex-grow: <number>; /* default 0 */
+                }
+                ```
+              </script>
+            </div>
+            <p>Notice: Default 0 should not be growed. If give an positive，width of element will grow according to scale to take up available space of main axis.</p>
+          </section>
+          <section>
+            <h3>flex-shrink</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .item {
+                  flex-shrink: <number>; /* default 1 */
+                }
+                ```
+              </script>
+            </div>
+            <p>Notice: Default 1 should be shrinked. If give an position, width of element will shrink according to scale.</p>
+          </section>
+          <section>
+            <h3>flex</h3>
+            <div data-markdown class="text-code hljs">
+              <script type="text/template">
+                ```CSS
+                .item {
+                  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                }
+                ```
+              </script>
+            </div>
+            <p>Default is <strong>0 1 auto</strong></p>
+          </section>
+        </section>
+        <section>
+          <h3><a href="https://www.caniuse.com/#search=flex" target="_blank">Browser Support</a></h3>
+
+        </section>
+        <section>
+          <h3>骰子</h3>
+          <img src="./images/dice.png">
+          <h4><a href="https://codepen.io/crystalynliu/pen/rZxQJY" target="_blank">Exercise</a></h4>
+        </section>
+         <section style="text-align: left;">
+            <h1>Q & A</h1>
+            <p>
+              - <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">Flex Guide</a> <br>
+              - <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid Guide</a> <br>
+            </p>
+          </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        transition: "convex",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          {
+            src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
