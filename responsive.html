@@ -246,7 +246,8 @@
                         <li><a href="https://modernizr.com/" target="_blank">Column drop</a></li>
                         <li><a href="http://foodsense.is/" target="_blank">Layout shifter</a></li>
                         <li><a href="http://futurefriendlyweb.com/" target="_blank">Tiny tweaks</a></li>
-                        <li><a href="https://www.html5rocks.com/en/tutorials/developertools/async-call-stack/" target="_blank">Off canvas</a></li>
+                        <li><a href="https://www.html5rocks.com/en/tutorials/developertools/async-call-stack/"
+                               target="_blank">Off canvas</a></li>
                     </ul>
                 </div>
                 <br/>
@@ -263,7 +264,7 @@
                     </ul>
                 </div>
             </section>
-            
+
             <section>
                 <img src="images/responsive/css-pixel.webp">
             </section>
@@ -275,6 +276,20 @@
                     <li>visual viewport</li>
                     <li>ideal viewport</li>
                 </ul>
+            </section>
+
+            <section>
+                <img src="images/responsive/layout-viewport.png">
+                <p>document.documentElement.clientWidth</p>
+            </section>
+
+            <section>
+                <img src="images/responsive/visual-viewport.png">
+                <p>window.innerWidth</p>
+            </section>
+
+            <section>
+                <img src="images/responsive/ideal-viewport.png">
             </section>
 
             <section>
@@ -358,13 +373,13 @@
             </section>
 
             <section>
-                    <H4>Viewport/Page Dimensions Media Features</H4>
-                    <ul>
-                        <li>width</li>
-                        <li>height</li>
-                        <li>aspect-ratio</li>
-                        <li>orientation (portrait | landscape)</li>
-                    </ul>
+                <H4>Viewport/Page Dimensions Media Features</H4>
+                <ul>
+                    <li>width</li>
+                    <li>height</li>
+                    <li>aspect-ratio</li>
+                    <li>orientation (portrait | landscape)</li>
+                </ul>
             </section>
 
             <section>
@@ -387,6 +402,30 @@
                         <li>not</li>
                         <li>only</li>
                     </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-content">
+                    <h3 class="text-left">Media Queries</h3>
+                    <div data-markdown>
+                        <script type="text/template">
+                            ```CSS
+                            @media not screen and (orientation: landscape) {...}
+                            Equals to
+                            @media not (screen and (orientation: landscape)) {...}
+                            ```
+                        </script>
+                    </div>
+                    <div data-markdown>
+                        <script type="text/template">
+                            ```CSS
+                            @media not screen and (min-width: 400px), (orientation: landscape) {...}
+                            Equals to
+                            @media (not (screen and (min-width: 400px))), (orientation: landscape) {...}
+                            ```
+                        </script>
+                    </div>
                 </div>
             </section>
 
@@ -474,9 +513,7 @@
             <section>
                 <div class="section-content">
                     <h3 class="text-left">Media Queries: breakpoints</h3>
-                    <div>
-                        <img src="images/responsive/major-breakpoints.jpg" alt="">
-                    </div>
+                    <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Example</a>
                 </div>
             </section>
             <section>
@@ -511,8 +548,6 @@
                     <li class="fragment roll-in t-gray">Use a fluid grid</li>
                     <li class="fragment roll-in t-gray">Relative Unit: 100%, rem, vh, vw...</li>
                     <li class="fragment roll-in t-gray">min-width, max-width</li>
-                    <li class="fragment roll-in t-gray">box-sizing</li>
-                    <li class="fragment roll-in t-gray">SVG</li>
                 </ul>
             </section>
 
