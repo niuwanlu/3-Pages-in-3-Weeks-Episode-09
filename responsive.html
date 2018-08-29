@@ -55,11 +55,11 @@
                     <div class="two-img-content">
                         <div class="pull-left left-img">
                             <!--<img src="images/slide-01-02.jpg" />-->
-                            <img src="images/responsive/responsive-media-2.png" />
+                            <img src="images/responsive/responsive-media-2.png"/>
                         </div>
                         <div class="pull-right right-img">
                             <!--<img src="images/slide-01-03.png" />-->
-                            <img src="images/responsive/responsive-media-3.png" />
+                            <img src="images/responsive/responsive-media-3.png"/>
                         </div>
                     </div>
                 </div>
@@ -72,11 +72,11 @@
                     <div class="two-img-content-with-title">
                         <div class="pull-left left-img">
                             <p>before</p>
-                            <img src="images/slide-01-04.jpg" />
+                            <img src="images/responsive/slide-01-04.jpg"/>
                         </div>
                         <div class="pull-right right-img">
                             <p>now</p>
-                            <img src="images/slide-01-05.jpg" />
+                            <img src="images/responsive/slide-01-05.jpg"/>
                         </div>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
                     <h4>Example 1</h4>
                     <div class="two-img-content">
                         <div class="pull-left left-img" style="width: 60%;">
-                            <img src="images/slide-02-01-01.png" />
+                            <img src="images/responsive/slide-02-01-01.png"/>
                         </div>
                         <div class="pull-right right-img" style="width: 35%;">
-                            <img src="images/slide-02-01-02.png" />
+                            <img src="images/responsive/slide-02-01-02.png"/>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                 <div class="section-content">
                     <h4>Example 2</h4>
                     <div class="single-img">
-                        <img src="images/slide-02-02.jpg">
+                        <img src="images/responsive/slide-02-02.jpg">
                     </div>
                 </div>
             </section>
@@ -116,15 +116,8 @@
 
         <section>
             <section>
-                <ul>
-                    <li>standalone mobile site (with its own m. URL)</li>
-                    <li>adaptive web design</li>
-                    <li>responsive web design</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>RWD <strong style="font-size: 100px">VS</strong> AWD</h3>
+                <h3>standalone mobile site</h3>
+                <h6>(with its own m. URL)</h6>
             </section>
 
             <section>
@@ -138,6 +131,8 @@
                             <p>自适应<br/>网页<br/>设计</p>
                         </div>
                     </div>
+                    <p>server-side detection to choose a design layout and size to display</p>
+                    <p>progressive enhancement</p>
                 </div>
             </section>
 
@@ -155,6 +150,20 @@
                     </div>
                 </div>
             </section>
+
+            <section>
+                <img src="images/responsive/content-like-water.jpg">
+            </section>
+
+            <section>
+                <h3>RWD <strong style="font-size: 100px">VS</strong> AWD</h3>
+                <a href="http://m.ctrip.com/" target="_blank">Standalone mobile example</a>
+                <br>
+                <a href="https://www.amazon.com/" target="_blank">AWD example</a>
+                <br>
+                <a href="http://segmentfault.com/" target="_blank">RWD example</a>
+            </section>
+
             <section>
                 <p>use responsive for new projects, and adaptive for retrofits</p>
             </section>
@@ -212,7 +221,9 @@
                     <div class="single-img" style="display: flex;">
                         <img src="images/responsive/rwd-in-one.jpg">
                         <ul style="margin-left: 50px;">
-                            <li>One url. <small>(<s>m.hello.com</s>; hello.com)</small></li>
+                            <li>One url.
+                                <small>(<s>m.hello.com</s>; hello.com)</small>
+                            </li>
                             <li>One page/code.</li>
                             <li>One content.</li>
                             <li>Adapt multiple devices.</li>
@@ -235,11 +246,35 @@
                         <li><a href="https://modernizr.com/" target="_blank">Column drop</a></li>
                         <li><a href="http://foodsense.is/" target="_blank">Layout shifter</a></li>
                         <li><a href="http://futurefriendlyweb.com/" target="_blank">Tiny tweaks</a></li>
-                        <li><a href="https://thoughtworks.jiveon.com/#" target="_blank">Off canvas</a></li>
+                        <li><a href="https://www.html5rocks.com/en/tutorials/developertools/async-call-stack/" target="_blank">Off canvas</a></li>
                     </ul>
                 </div>
                 <br/>
-                <a href="http://www.lukew.com/ff/entry.asp?1514" target="_blank">Learn More</a>
+                <a href="http://wf.uisdc.com/cn/layouts/rwd-patterns/" target="_blank">Learn More</a>
+            </section>
+
+            <section>
+                <div>
+                    <h3>Pixels</h3>
+                    <ul>
+                        <li>PX(CSS pixels)</li>
+                        <li>DP(device pixels)</li>
+                        <li>devicePixelRatio = DP / PX</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <img src="images/responsive/css-pixel.webp">
+            </section>
+
+            <section>
+                <h3>viewport</h3>
+                <ul>
+                    <li>layout viewport</li>
+                    <li>visual viewport</li>
+                    <li>ideal viewport</li>
+                </ul>
             </section>
 
             <section>
@@ -252,7 +287,7 @@
                             <script type="text/template">
                                 ```HTML
                                 <meta name="viewport"
-                                      content="width=device-width; initial-scale=1.0" />
+                                      content="width=device-width; initial-scale=1.0"/>
                                 ```
                             </script>
                         </div>
@@ -262,27 +297,14 @@
             </section>
 
             <section>
-                <div>
-                    <h3>Pixels</h3>
-                    <ul>
-                        <li>device pixel</li>
-                        <li>css pixel</li>
-                        <li>pixel per inch</li>
-                        <li>device pixel ratio</li>
-                    </ul>
-                </div>
-                <a href="http://screensiz.es/" target="_blank">Screen Size</a>
-                <br>
-                <a href="https://github.com/jawil/blog/issues/21" target="_blank">Learn More Pixels</a>
-            </section>
-
-            <section>
                 <div class="section-content">
                     <h3 class="text-left">Media Queries</h3>
                     <div class="list-content">
                         <ul>
                             <li>A CSS3 feature.</li>
-                            <li>Different styles in different medias and resolutions.</li>
+                            <li>A media query is composed of an optional media type and any number of media feature
+                                expressions.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -301,6 +323,10 @@
             </section>
 
             <section>
+                <img src="images/responsive/media-queries.png">
+            </section>
+
+            <section>
                 <div class="section-content">
                     <h3 class="text-left">Media Queries</h3>
                     <H4>media types</H4>
@@ -308,7 +334,7 @@
                         <li>all</li>
                         <li>screen</li>
                         <li>print</li>
-                        <li>...</li>
+                        <li>speech</li>
                     </ul>
 
                 </div>
@@ -319,11 +345,36 @@
                     <h3 class="text-left">Media Queries</h3>
                     <H4>media features</H4>
                     <ul>
-                        <li>width/height/min-width/device-width</li>
-                        <li>orientation</li>
-                        <li>device-aspect-ratio</li>
+                        <li>discrete</li>
+                        <li>
+                            range
+                            <span class="fragment" style="font-size: 70%;">
+                                “min-” and “max-” prefixes
+                            </span>
+                        </li>
                     </ul>
+
                 </div>
+            </section>
+
+            <section>
+                    <H4>Viewport/Page Dimensions Media Features</H4>
+                    <ul>
+                        <li>width</li>
+                        <li>height</li>
+                        <li>aspect-ratio</li>
+                        <li>orientation (portrait | landscape)</li>
+                    </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Display Quality Media Features</li>
+                    <li>Color Media Features</li>
+                    <li>Interaction Media Features</li>
+                </ul>
+                <br>
+                <a href="https://www.w3.org/TR/mediaqueries-4/" target="_blank">Read More</a>
             </section>
 
             <section>
@@ -332,6 +383,7 @@
                     <H4>media operators</H4>
                     <ul>
                         <li>and</li>
+                        <li>,</li>
                         <li>not</li>
                         <li>only</li>
                     </ul>
@@ -346,13 +398,13 @@
                         <script type="text/template">
                             ```HTML
                             <link href="css/common.css" rel="stylesheet"
-                                  type="text/css" media="all" />
+                                  type="text/css" media="all"/>
 
                             <link href="css/screen.css" rel="stylesheet"
-                                  type="text/css" media="screen" />
+                                  type="text/css" media="screen"/>
 
                             <link href="css/print.css" rel="stylesheet"
-                                  type="text/css" media="print" />
+                                  type="text/css" media="print"/>
                             ```
                         </script>
                     </div>
@@ -366,7 +418,7 @@
                         <script type="text/template">
                             ```HTML
                             <link href="css/screen.css" rel="stylesheet"
-                                  type="text/css" media="screen and (max-width: 600px)" />
+                                  type="text/css" media="screen and (max-width: 600px)"/>
                             ```
                         </script>
                     </div>
@@ -512,9 +564,9 @@
     Reveal.initialize({
         transition: "convex",
         dependencies: [
-            { src: 'plugin/markdown/marked.js' },
-            { src: 'plugin/markdown/markdown.js' },
-            { src: 'plugin/notes/notes.js', async: true },
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
             {
                 src: 'plugin/highlight/highlight.js', async: true, callback: function () {
                     hljs.initHighlightingOnLoad();

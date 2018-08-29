@@ -134,3 +134,7 @@ div.bg-container {
     float: right;
     text-align: left;
 }
+
+.single-img img {
+    width: 65%;
+}
