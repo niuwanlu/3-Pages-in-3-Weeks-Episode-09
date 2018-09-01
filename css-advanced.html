@@ -38,7 +38,6 @@
                 <li>Baseline</li>
                 <li>Font Icon</li>
                 <li>Animate</li>
-                <li>CSS命名规范</li>
             </ul>
         </section>
 
@@ -196,6 +195,135 @@
             <section>
                 <p>在计算权重的时候 伪类与类优先级相同 伪元素与标签优先级相同</p>
             </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h3>CSS相对单位</h3>
+            </section>
+
+            <section>
+                <p>pixel - 绝对长度单位</p>
+                <p>em - 最常见的相对长度单位</p>
+            </section>
+
+            <section>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        .padded {
+                            font-size: 16px;
+                            padding: 1em;
+                        }
+                        ```
+                    </script>
+                </div>
+                <div class="fragment">
+                    <p>设置padding、height、width或border-radius等属性</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>相对大小的padding和border-radius</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <span class="box box-small">Small</span>
+                        <span class="box box-large">Large</span>
+                        ```
+                    </script>
+                </div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        .box {
+                            padding: 1em;
+                            border-radius: 1em;
+                            background-color: lightgray;
+                        }
+                        .box-small {
+                            font-size: 12px;
+                        }
+                        .box-large {
+                            font-size: 18px;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>Font size with em</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <body>
+                            We love coffee  <p class="slogan">We love coffee</p>
+                        </body>
+                        ```
+                    </script>
+                </div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        body {
+                            font-size: 16px;
+                        }
+                        .slogan {
+                            font-size: 1.2em;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+            
+            <section>
+                <h3>嵌套列表中的字号缩小现象</h3>
+                <img src="images/css-advanced/em-fonts.png">
+            </section>
+
+            <section>
+                <h3>rem</h3>
+                <p>rem = root em</p>
+                <div class="fragment">
+                    <p>:root -> tag html</p>
+                </div>
+            </section>
+
+            <section>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        :root {
+                            font-size: 1em;
+                        }
+                        ul {
+                            font-size: .8rem;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <p>对font-size使用rem，对border使用px，对其他的度量方式如padding、margin、border-radius等使用em</p>
+            </section>
+
+            <section>
+                <h3>viewport-relative units</h3>
+                <ul>
+                    <li>vh —— 视口高度的1/100</li>
+                    <li>vw —— 视口宽度的1/100</li>
+                    <li>vmin —— 视区宽度或高度较小值的1/100</li>
+                    <li>vmax —— 视区宽度或高度较大值的1/100</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>calc()</h3>
+            </section>
+
 
         </section>
     </div>
