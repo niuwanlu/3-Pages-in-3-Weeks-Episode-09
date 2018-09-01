@@ -33,13 +33,170 @@
 
         <section>
             <ul>
-                <li>CSS伪元素</li>
+                <li>Pseudo-classes & Pseudo-elements</li>
                 <li>CSS相对单位</li>
                 <li>Baseline</li>
                 <li>Font Icon</li>
                 <li>Animate</li>
                 <li>CSS命名规范</li>
             </ul>
+        </section>
+
+        <section>
+            <section>
+                <h3>Pseudo-classes</h3>
+                <h3>&</h3>
+                <h3>Pseudo-elements</h3>
+            </section>
+
+            <section>
+                <p>A pseudo-element is used to style specified parts of an element.</p>
+                <p>A pseudo-class is used to define a special state of an element.</p>
+            </section>
+
+            <section>
+                <p>
+                    <em>This</em>
+                    <em>is a text</em>
+                </p>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <p>
+                            <em>This</em>
+                            <em>is a text</em>
+                        </p>
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <p>change first word to red</p>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <p>
+                            <em class="first-child">This</em>
+                            <em>is a text</em>
+                        </p>
+                        ```
+                    </script>
+                </div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        em.first-child {
+                            color: red;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>CSS Pseudo-classes</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <p>
+                            <em>This</em>
+                            <em>is a text</em>
+                        </p>
+                        ```
+                    </script>
+                </div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        em:first-child {
+                            color: red;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>pseudo-classes syntax</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        selector:pseudo-class {
+                            property:value;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <p>change first letter to red</p>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <p>
+                            <em><span>T</span>his</em>
+                            <em>is a text</em>
+                        </p>
+                        ```
+                    </script>
+                </div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        p span {
+                            color: red;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>CSS Pseudo-elements</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```HTML
+                        <p>
+                            <em>This</em>
+                            <em>is a text</em>
+                        </p>
+                        ```
+                    </script>
+                </div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        p::first-letter {
+                            color: red;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>pseudo-elements syntax</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        selector::pseudo-element {
+                            property:value;
+                        }
+                        ```
+                    </script>
+                </div>
+                <div class="fragment text-left">
+                    <p>The double colon replaced the single-colon notation for pseudo-elements in CSS3.</p>
+                    <p>For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.</p>
+                </div>
+            </section>
+
+            <section>
+                <p>在计算权重的时候 伪类与类优先级相同 伪元素与标签优先级相同</p>
+            </section>
+
         </section>
     </div>
 </div>

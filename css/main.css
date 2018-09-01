@@ -80,6 +80,9 @@ div.bg-container {
 .what-is-html strong {
     color: #f04e98;
 }
+.text-left {
+    text-align: left;
+}
 .text-right {
     text-align: right;
 }
