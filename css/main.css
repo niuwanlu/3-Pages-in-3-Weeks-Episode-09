@@ -141,3 +141,37 @@ div.bg-container {
 .single-img img {
     width: 65%;
 }
+
+.stretch-width
+{
+    width:100px;
+    height:100px;
+    background:red;
+    transition:width 2s;
+}
+
+.stretch-width:hover
+{
+    width:300px;
+}
+
+.move {
+    width:100px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation:mymove 5s infinite;
+    -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+    from {left:0;}
+    to {left:200px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    from {left:0;}
+    to {left:200px;}
+}

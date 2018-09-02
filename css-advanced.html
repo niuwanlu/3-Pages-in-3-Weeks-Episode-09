@@ -279,7 +279,7 @@
                     </script>
                 </div>
             </section>
-            
+
             <section>
                 <h3>嵌套列表中的字号缩小现象</h3>
                 <img src="images/css-advanced/em-fonts.png">
@@ -338,6 +338,121 @@
                     <li>keyframes</li>
                 </ul>
             </section>
+
+            <section>
+                <h3>transform - 变形</h3>
+                <ul>
+                    <li>rotate</li>
+                    <li>scale</li>
+                    <li>skew</li>
+                    <li>translate</li>
+                    <li>matrix</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>transition - 过渡</h3>
+                <div class="stretch-width"></div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        .stretch-width
+                        {
+                            width:100px;
+                            transition:width 2s;
+                        }
+
+                        .stretch-width:hover
+                        {
+                            width:300px;
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>transition - 过渡</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        transition: property duration timing-function delay;
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>transition - 过渡</h3>
+                <p>transition-timing-function</p>
+                <ul>
+                    <li>默认 ease ：慢速开始，中间变快，慢速结束</li>
+                    <li>可选 liner：匀速运动</li>
+                    <li>可选 ease-in：慢速开始</li>
+                    <li>可选 ease-out：慢速结束</li>
+                    <li>可选 ease-in-out：慢速开始，慢速结束</li>
+                    <li>可选 cubic-bezier(n, n, n, n)：在 bezier 函数中自定义 0 ~ 1 之间的数值</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>transition - 过渡</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        transition: width 2s ease-in-out, height 2s ease-in-out;
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>animation - 动画</h3>
+                <div class="move"></div>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        div {
+                            animation:move 5s infinite;
+                        }
+                        @keyframes move {
+                            from {left:0px;}
+                            to {left:200px;}
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>animation - 动画</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        animation: name duration timing-function delay iteration-count direction;
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
+                <h3>animation - 动画</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        @keyframes myfirst
+                        {
+                            0%   {background:red; left:0px; top:0px;}
+                            25%  {background:yellow; left:200px; top:0px;}
+                            50%  {background:blue; left:200px; top:200px;}
+                            75%  {background:green; left:0px; top:200px;}
+                            100% {background:red; left:0px; top:0px;}
+                        }
+                        ```
+                    </script>
+                </div>
+            </section>
+
         </section>
 
     </div>
