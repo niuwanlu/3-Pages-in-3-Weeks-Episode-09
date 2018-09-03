@@ -34,16 +34,19 @@
         <section>
             <ul>
                 <li>Pseudo-classes & Pseudo-elements</li>
-                <li>CSS相对单位</li>
-                <li>Animate</li>
+                <li>CSS Relative Units</li>
+                <li>CSS Animation</li>
             </ul>
         </section>
 
         <section>
             <section>
-                <h3>Pseudo-classes</h3>
-                <h3>&</h3>
-                <h3>Pseudo-elements</h3>
+                <h3>Pseudo-classes
+                    <br>
+                    &
+                    <br>
+                    Pseudo-elements
+                </h3>
             </section>
 
             <section>
@@ -128,6 +131,21 @@
             </section>
 
             <section>
+                <h3>anchor伪类</h3>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        a:link {color:#FF0000;} /* 未访问的链接 */
+                        a:visited {color:#00FF00;} /* 已访问的链接 */
+                        a:hover {color:#FF00FF;} /* 鼠标划过链接 */
+                        a:active {color:#0000FF;} /* 已选中的链接 */
+                        ```
+                    </script>
+                </div>
+                <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Read More</a>
+            </section>
+
+            <section>
                 <p>change first letter to red</p>
                 <div data-markdown>
                     <script type="text/template">
@@ -174,6 +192,17 @@
             </section>
 
             <section>
+                <h3>All CSS Pseudo Elements</h3>
+                <ul>
+                    <li>::after</li>
+                    <li>::before</li>
+                    <li>::first-letter</li>
+                    <li>::first-line</li>
+                    <li>::selection</li>
+                </ul>
+            </section>
+
+            <section>
                 <h3>pseudo-elements syntax</h3>
                 <div data-markdown>
                     <script type="text/template">
@@ -193,16 +222,11 @@
             <section>
                 <p>在计算权重的时候 伪类与类优先级相同 伪元素与标签优先级相同</p>
             </section>
-
-            <section>
-                <h3>Font Icon</h3>
-            </section>
-
         </section>
 
         <section>
             <section>
-                <h3>CSS相对单位</h3>
+                <h3>CSS Relative Units</h3>
             </section>
 
             <section>
@@ -227,7 +251,7 @@
             </section>
 
             <section>
-                <h3>相对大小的padding和border-radius</h3>
+                <p>相对大小的padding和border-radius</p>
                 <div data-markdown>
                     <script type="text/template">
                         ```HTML
@@ -298,7 +322,7 @@
                     <script type="text/template">
                         ```CSS
                         :root {
-                            font-size: 1em;
+                            font-size: 16px;
                         }
                         ul {
                             font-size: .8rem;
@@ -309,7 +333,11 @@
             </section>
 
             <section>
-                <p>对font-size使用rem，对border使用px，对其他的度量方式如padding、margin、border-radius等使用em</p>
+                <ul>
+                    <li>对font-size使用rem</li>
+                    <li>对border使用px</li>
+                    <li>对其他的度量方式如padding、margin、border-radius等使用em</li>
+                </ul>
             </section>
 
             <section>
@@ -351,8 +379,21 @@
             </section>
 
             <section>
+                <h4>translate</h4>
+                <div data-markdown>
+                    <script type="text/template">
+                        ```CSS
+                        transform:translate(50px,50px);
+                        transform:translateX(100px);
+                        transform:translateY(-25px);
+                        ```
+                    </script>
+                </div>
+            </section>
+
+            <section>
                 <h3>transition - 过渡</h3>
-                <div class="stretch-width"></div>
+                <div class="stretch-width" style="margin-left: 50px;"></div>
                 <div data-markdown>
                     <script type="text/template">
                         ```CSS
@@ -408,7 +449,7 @@
 
             <section>
                 <h3>animation - 动画</h3>
-                <div class="move"></div>
+                <div class="move" style="margin-left: 50px;"></div>
                 <div data-markdown>
                     <script type="text/template">
                         ```CSS
