@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>3 Day 3 Pages</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+
+  <body class="css3">
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>Naming</section>
+        <section>
+          <p>There are only two hard problems in Computer Science: cache invalidation and naming things.</p>
+          <p>— Phil Karlton</p>
+        </section>
+        <section>
+          <section>
+            <h3>BEM</h3>
+            <p class="fragment">Block Element Modifier</p>
+            <p class="fragment">Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.</p>  
+          </section>
+          <section>
+            <h3>Block</h3>
+            <p>Standalone entity that is meaningful on its own.</p>  
+            <div data-markdown class="fragment text-code">
+                <script type="text/template">
+                  ```HTML
+                  <header class="headr"></header>
+                  <nav class="nav"></nav>
+                  <aside class="aside"></aside>
+                  <button class="btn"></button>
+                  ```
+                </script>
+              </div>
+              <p class="fragment">当它可以独立存在，并且可以复用到别的页面上，那么它就是一个 Block</p>
+          </section>
+          <section>
+            <h3>element</h3>
+            <p>Parts of a block and have no standalone meaning. Any element is semantically tied to its block.</p>
+            <div data-markdown class="fragment text-code">
+              <script type="text/template">
+                ```HTML
+                <nav class="nav">
+                  <a class="nav__items"></a>
+                  <a class="nav__items"></a>
+                  <a class="nav__items"></a>
+                </nav>
+                ```
+              </script>
+            </div>
+          </section>
+          <section>
+            <h3>Modifier</h3>
+            <p>Flags on blocks or elements. Use them to change appearance, behavior or state.</p>
+            <div data-markdown class="fragment text-code">
+              <script type="text/template">
+                ```HTML
+                <nav class="nav">
+                  <a class="nav__items nav__items--green">Green</a>
+                  <a class="nav__items nav__items--blue">Blue</a>
+                  <a class="nav__items nav__items--red">Red</a>
+                </nav>
+                ```
+              </script>
+            </div>
+          </section>
+          <section>
+            <h3>Example</h3>
+          </section>
+          <section>
+            <div data-markdown class="text-code">
+              <script type="text/template">
+                ```HTML
+                <form class="form form--theme-xmas form--simple">
+                  <input class="form__input" type="text" />
+                  <input
+                    class="form__submit form__submit--disabled"
+                    type="submit" />
+                </form>
+                ```
+                ```CSS
+                  .form { }
+                  .form--theme-xmas { }
+                  .form--simple { }
+                  .form__input { }
+                  .form__submit { }
+                  .form__submit--disabled { }
+                ```
+              </script>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h3>高效前端开发</h3>
+        </section>
+        <section>
+          <em>子曰：</em><blockquote>“工欲善其事，必先利其器”</blockquote>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h2>Editor</h2>
+            <p>Sublime Text, VScode, Atom, Webstorm</p>
+          </section>
+          
+          <section data-background-color="#000">
+            <h3>Emmet</h3>
+            <img src="images/emmit.gif" style="box-shadow: none;border:none" alt="">
+            <img src="images/css.gif" style="box-shadow: none;border:none" alt="">
+          </section>
+          <section data-background-color="#000">
+            <h3>Lorem / Lipsum</h3>
+            <a href="http://www.lipsum.com/" target="_blank">
+              <img src="images/lorem.gif" style="box-shadow: none;border:none" alt="">
+            </a>
+          </section>
+        </section>
+        <section>
+          <h3>Developer Tools</h3>
+          <div class="list-content">
+            <ul>
+              <li>Chrome Developer Tools.</li>
+              <li>Firefox Developer Tools.</li>
+              <li>Safari Developer Tools.</li>
+              <li>IE Developer Tools.</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3>Sip</h3>
+        </section>
+        <section>
+          <section>
+            <h2>Online Tools</h2>
+          </section>
+          <section>
+            <h3>Font Icons</h3>
+            <p><a href="https://www.iconfinder.com/">icon finder</a></p>
+            <p><a href="http://fontello.com/">fontello</a></p>
+            <p><a href="http://www.iconfont.cn/">icon font</a></p>
+          </section>
+          <section>
+            <h3>Compress Images</h3>
+            <p><a href="https://tinypng.com/" target="_blank">https://tinypng.com</a></p>
+          </section>
+          <section>
+            <h3>CSS Animate</h3>
+            <p><a href="http://cssanimate.com/" target="_blank">http://cssanimate.com</a></p>
+          </section>
+          <section>
+            <h3>Design</h3>
+            <p><a href="http://paletton.com/" target="_blank">http://paletton.com</a></p>
+            <p><a href="https://www.materialpalette.com" target="_blank">https://www.materialpalette.com</a></p>
+            <p><a href="http://pixabay.com" target="_blank">http://pixabay.com</a></p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Frontend Build</h2>
+          </section>
+          <section>
+            <h3>Node</h3>
+            <img src="images/node.jpg" style="box-shadow: none" height="200" alt="">
+          </section>
+          <section>
+            <h3>Package Control</h3>
+          </section>
+          <section>
+            <h4>NPM, Yarn</h4>
+            <p>
+              <img src="images/npm.jpg" style="box-shadow: none;margin: 0 40px" height="200" alt="">
+              <img src="images/yarn.jpg" style="box-shadow: none" height="200" alt="">
+            </p>
+  
+          </section>
+          <section>
+            <h3>CSS预处理</h3>
+            <img src="images/css.jpg" style="box-shadow: none" alt="">
+          </section>
+          <section>
+            <h3>构建工具</h3>
+            <p>
+              <img src="images/grunt.jpg" style="box-shadow: none" height="200" alt="">
+              <!--<img src="images/browserify.jpg" style="box-shadow: none;margin: 0 40px"  alt="">-->
+              <img src="images/gulp.jpg" style="box-shadow: none;margin: 0 40px" height="200" alt="">
+              <img src="images/webpack.jpg" style="box-shadow: none" height="200" alt="">
+            </p>
+          </section>
+        </section>
+        
+        <section style="text-align: left;">
+          <h1>THE END</h1>
+          <p>
+            - <a href="">Q & A</a><br>
+            - <a href="http://getbem.com/">BEM</a>
+            - <a href="https://css-tricks.com/bem-101/">css-tricks BEM</a>
+          </p>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        transition: "convex",
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          {
+            src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
